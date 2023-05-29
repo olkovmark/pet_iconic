@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icomic</title>
+    <link rel="stylesheet" href="public/css/normalize.css" />
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header_conteiner">
+        <div class="header_logo">
+          <img src="public/assets/icons/logo.svg" alt="logo" />
+        </div>
+        <div class="nav_button_open" id="nav_open">
+          <img
+            src="public/assets/icons/burger.svg"
+            alt="nav"
+            class="nav_button_img"
+          />
+        </div>
+        <nav class="navigation" id="nav">
+          <a class="selected" href="#">home</a>
+          <a href="#">services</a>
+          <a href="#">about</a>
+          <a href="#">gallery</a>
+          <a href="#">contacs</a>
+          <button class="navigation_exit" id="nav_exit"></button>
+        </nav>
+        <button class="header_consultation">Get a consultation</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main_background"></div>
+      <div class="main_conteiner">
+        <h1 class="main_title">LIFE IS SHORT, TREAT YOURSELF</h1>
+        <div class="main_action">
+          <button class="main_action_button"></button>
+          <h4 class="main_action_text">Discover for a 30 seconds</h4>
+        </div>
+      </div>
+    </main>
+
+    <section class="services">
+      <h2 class="services_title">popular services</h2>
+      <select class="services_select" name="service" id="service">
+        <option value="all">ALL SERVICES</option>
+        <option value="dine">DINE</option>
+        <option value="ride">RIDE</option>
+        <option value="discover">DISCOVER</option>
+        <option value="relax">RELAX</option>
+        <option value="experience">EXPERIENCE</option>
+      </select>
+
+      <div class="services_filter">
+        <button class="selected">ALL SERVICES</button>
+        <button>DINE</button>
+        <button>RIDE</button>
+        <button>DISCOVER</button>
+        <button>RELAX</button>
+        <button>EXPERIENCE</button>
+      </div>
+
+      <div class="services_list">
+        <div class="service_card">
+          <img
+            src="public/assets/services/service-1.jpg"
+            alt="service_1"
+            class="services_service"
+          />
+          <p class="service_card_description">
+            BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB
+          </p>
+          <div class="service_price">
+            <span class="service_price_discount">USD 2,000.00</span
+            ><span class="service_price_full">USD 4,000.00</span>
+            <span class="service_price_time">1h</span>
+          </div>
+        </div>
+
+        <div class="service_card">
+          <img
+            src="public/assets/services/service-2.jpg"
+            alt="service_2"
+            class="services_service"
+          />
+
+          <p class="service_card_description">Flyboard in Dubai marina</p>
+          <div class="service_price">
+            <span class="service_price_discount">USD 2,000.00</span
+            ><span class="service_price_full">USD 4,000.00</span>
+            <span class="service_price_time">1h</span>
+          </div>
+        </div>
+
+        <div class="service_card">
+          <img
+            src="public/assets/services/service-3.jpg"
+            alt="service_3"
+            class="services_service"
+          />
+          <p class="service_card_description">
+            FRIDAY BRUNCH AT FRANGIPANI ON ZAYA NURAI ISLAND, ABU DHABI
+          </p>
+          <div class="service_price">
+            <span class="service_price_discount">USD 2,000.00</span
+            ><span class="service_price_full">USD 4,000.00</span>
+            <span class="service_price_time">1h</span>
+          </div>
+        </div>
+
+        <div class="service_card">
+          <img
+            src="public/assets/services/service-4.jpg"
+            alt="service_4"
+            class="service_card_img"
+          />
+          <p class="service_card_description">
+            LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI
+          </p>
+          <div class="service_price">
+            <span class="service_price_discount">USD 2,000.00</span
+            ><span class="service_price_full">USD 4,000.00</span>
+            <span class="span" class="service_price_time">1h</span>
+          </div>
+        </div>
+
+        <div class="service_card">
+          <img
+            src="public/assets/services/service-5.jpg"
+            alt="service_5"
+            class="services_service"
+          />
+          <p class="service_card_description">
+            RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS
+          </p>
+          <div class="service_price">
+            <span class="service_price_discount">USD 2,000.00</span
+            ><span class="service_price_full">USD 4,000.00</span>
+            <span class="service_price_time">1h</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="member" class="member">
+      <h2 class="member_title">How to become a part of iconik?</h2>
+      <div id="member_list" class="member_list">
+        <div class="member_card">
+          <img
+            src="public/assets/icons/sectionMember/request.svg"
+            alt="member"
+            class="member_card_img"
+          />
+          <h3 class="member_card_title">1. You leave a request online</h3>
+          <p class="member_card_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+        <div class="member_card">
+          <img
+            src="public/assets/icons/sectionMember/consultation.svg"
+            alt="member"
+            class="member_card_img"
+          />
+          <h3 class="member_card_title">2. Consultation with the manager</h3>
+          <p class="member_card_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+        <div class="member_card">
+          <img
+            src="public/assets/icons/sectionMember/conditions.svg"
+            alt="member"
+            class="member_card_img"
+          />
+          <h3 class="member_card_title">
+            3. Presentation or discussion of conditions remotely
+          </h3>
+          <p class="member_card_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="member_card">
+          <img
+            src="public/assets/icons/sectionMember/contract.svg"
+            alt="member"
+            class="member_card_img"
+          />
+          <h3 class="member_card_title">4. We conclude a contract</h3>
+          <p class="member_card_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+        <div class="member_card">
+          <img
+            src="public/assets/icons/sectionMember/enjoy.svg"
+            alt="member"
+            class="member_card_img"
+          />
+          <h3 class="member_card_title">
+            5. You enjoy all the benefits of membership
+          </h3>
+          <p class="member_card_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+      </div>
+      <button id="member_left" class="member_left">
+        <img src="public/assets/icons/arrow-left.svg" alt="left" />
+      </button>
+      <button id="member_right" class="member_right">
+        <img src="public/assets/icons/arrow-right.svg" alt="left" />
+      </button>
+
+      <div class="member_dots">
+        <div class="planc"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </section>
+
+    <section class="plans">
+      <h2 class="plans_title">iconik membership plans</h2>
+      <div class="plans_list">
+        <div class="plans_card">
+          <img src="public/assets/plan-header-img.jpg" alt="plan" />
+          <h5 class="plans_card_title">Basic</h5>
+          <ul class="plans_card_list">
+            <li class="plans_card_item">
+              Access to iconiK Members Experience Portal
+            </li>
+            <li class="plans_card_item">
+              Access to iconiK Concierge services Complimentary
+            </li>
+            <li class="plans_card_item">
+              iKoins to spend on Dezerved platform (on a yearly basis)
+              Complimentary iKoins to spend on iconiK
+            </li>
+            <li class="plans_card_item">Worldwide (on a yearly basis)</li>
+            <li class="plans_card_item">
+              Complimentary VIP meet & greet services
+            </li>
+            <li class="plans_card_item">
+              Complimentary airport pick up and drop off Access to iconiK
+              Lifestyle services
+            </li>
+          </ul>
+          <button class="plans_card_btnInfo">Get a consultation</button>
+        </div>
+        <div class="plans_card">
+          <img src="public/assets/plan-header-img.jpg" alt="plan" />
+          <h5 class="plans_card_title">Standart</h5>
+          <ul class="plans_card_list">
+            <li class="plans_card_item">
+              Access to iconiK Members Experience Portal
+            </li>
+            <li class="plans_card_item">
+              Access to iconiK Concierge services Complimentary
+            </li>
+            <li class="plans_card_item">
+              iKoins to spend on Dezerved platform (on a yearly basis)
+              Complimentary iKoins to spend on iconiK
+            </li>
+            <li class="plans_card_item">Worldwide (on a yearly basis)</li>
+            <li class="plans_card_item">
+              Complimentary VIP meet & greet services
+            </li>
+            <li class="plans_card_item">
+              Complimentary airport pick up and drop off Access to iconiK
+              Lifestyle services
+            </li>
+          </ul>
+          <button class="plans_card_btnInfo">Get a consultation</button>
+        </div>
+        <div class="plans_card">
+          <img src="public/assets/plan-header-img.jpg" alt="plan" />
+          <h5 class="plans_card_title">INDIVIDUAL</h5>
+          <ul class="plans_card_list">
+            <li class="plans_card_item">
+              Access to iconiK Members Experience Portal
+            </li>
+            <li class="plans_card_item">
+              Access to iconiK Concierge services Complimentary
+            </li>
+            <li class="plans_card_item">
+              iKoins to spend on Dezerved platform (on a yearly basis)
+              Complimentary iKoins to spend on iconiK
+            </li>
+            <li class="plans_card_item">Worldwide (on a yearly basis)</li>
+            <li class="plans_card_item">
+              Complimentary VIP meet & greet services
+            </li>
+            <li class="plans_card_item">
+              Complimentary airport pick up and drop off Access to iconiK
+              Lifestyle services
+            </li>
+          </ul>
+          <button class="plans_card_btnInfo">Get a consultation</button>
+        </div>
+        <div class="plans_card super">
+          <img src="public/assets/plan-header-img.jpg" alt="plan" />
+          <h5 class="plans_card_title">SUPER</h5>
+          <ul class="plans_card_list">
+            <li class="plans_card_item">
+              Access to iconiK Members Experience Portal
+            </li>
+            <li class="plans_card_item">
+              Access to iconiK Concierge services Complimentary
+            </li>
+            <li class="plans_card_item">
+              iKoins to spend on Dezerved platform (on a yearly basis)
+              Complimentary iKoins to spend on iconiK
+            </li>
+            <li class="plans_card_item">Worldwide (on a yearly basis)</li>
+            <li class="plans_card_item">
+              Complimentary VIP meet & greet services
+            </li>
+            <li class="plans_card_item">
+              Complimentary airport pick up and drop off Access to iconiK
+              Lifestyle services
+            </li>
+          </ul>
+          <button class="plans_card_btnInfo">Get a consultation</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="lifestyle">
+      <h2 class="lifestyle_title">iconik lifestyle</h2>
+      <div class="lifestyle_list">
+        <img
+          src="public/assets/gallery/gallery-1.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+        <img
+          src="public/assets/gallery/gallery-3.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+        <img
+          src="public/assets/gallery/gallery-4.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+        <img
+          src="public/assets/gallery/gallery-5.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+        <img
+          src="public/assets/gallery/gallery-6.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+        <img
+          src="public/assets/gallery/gallery-7.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+        <img
+          src="public/assets/gallery/gallery-8.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+        <img
+          src="public/assets/gallery/gallery-9.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+        <img
+          src="public/assets/gallery/gallery-10.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+        <img
+          src="public/assets/gallery/gallery-2.jpg"
+          alt="lifestyel"
+          class="lifestyle_img"
+        />
+      </div>
+    </section>
+
+    <section class="events">
+      <h2 class="events_title">
+        Iconik latest<br />
+        events
+      </h2>
+      <div class="events_list">
+        <div class="events_card">
+          <img
+            src="public/assets/gallery/gallery-13.jpg"
+            alt="video"
+            class="events_card_img"
+          />
+          <p class="events_card_text">
+            Dubai Marina Yacht Tour with Barbecue Lunch - exclusive Yachts
+          </p>
+          <button class="events_card_button"></button>
+        </div>
+        <div class="events_card">
+          <img
+            src="public/assets/gallery/gallery_12.jpg"
+            alt="video"
+            class="events_card_img"
+          />
+          <p class="events_card_text">
+            Dubai Marina Yacht Tour with Barbecue Lunch - exclusive Yachts
+          </p>
+          <button class="events_card_button"></button>
+        </div>
+      </div>
+
+      <button class="events_button">Choose a plan</button>
+    </section>
+
+    <section class="managers">
+      <h2 class="managers_title">
+        Iconik managers will provide you with the best experience
+      </h2>
+      <div class="managers_list">
+        <div class="managers_card">
+          <img
+            src="public/assets/managers/manager-1.jpg"
+            alt="Mahammed Naqvi"
+            class="managers_card_img"
+          />
+          <h3 class="managers_card_name">Mahammed Naqvi</h3>
+          <p class="managers_card_role">Iconik lifestyle manager</p>
+        </div>
+        <div class="managers_card">
+          <img
+            src="public/assets/managers/manager-2.jpg"
+            alt="Mahammed Naqvi"
+            class="managers_card_img"
+          />
+          <h3 class="managers_card_name">Aliya Mir</h3>
+          <p class="managers_card_role">Iconik lifestyle manager</p>
+        </div>
+        <div class="managers_card">
+          <img
+            src="public/assets/managers/manager-3.jpg"
+            alt="Mahammed Naqvi"
+            class="managers_card_img"
+          />
+          <h3 class="managers_card_name">Unais el-Baccus</h3>
+          <p class="managers_card_role">Iconik lifestyle manager</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation">
+      <h2 class="consultation_title">Get a free consultation</h2>
+      <div class="consultation_input_form">
+        <div class="consultation_input_conteiner">
+          <input
+            type="text"
+            class="consultation_input"
+            placeholder="First name"
+          />
+          <img src="public/assets/icons/user.svg" alt="user" />
+        </div>
+        <div class="consultation_input_conteiner">
+          <div class="custom_select">
+            <div>
+              <img src="public/assets/icons/flags/flag_1.svg" alt="Arabic" />
+            </div>
+            <img src="public/assets/icons/Vector.svg" alt="" />
+          </div>
+          <input
+            type="tel"
+            class="consultation_input"
+            placeholder="+ 000 000 0000"
+          />
+          <img src="public/assets/icons/phone.svg" alt="phone" />
+        </div>
+        <div class="consultation_input_conteiner">
+          <input
+            type="email"
+            class="consultation_input"
+            placeholder="Email adress"
+          />
+          <img src="public/assets/icons/mail.svg" alt="mail" />
+        </div>
+      </div>
+
+      <div class="consultation_button_block">
+        <button class="consultation_button">Get a consultation</button>
+        <p class="consultation_button_info">
+          By clicking the button you are accepting to receive an email about
+          club membership and a phone call to arrange a show-around.
+        </p>
+      </div>
+    </section>
+
+    <section class="social">
+      <div class="social_info">
+        <div>
+          <h2 class="social_title">We are on social media</h2>
+          <p class="social_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+          </p>
+        </div>
+        <div class="social_links_list">
+          <a href="#" class="social_link">INSTAGRAM</a>
+          <a href="#" class="social_link">FACEBOOK</a>
+          <a href="#" class="social_link">LENKEDIN</a>
+        </div>
+      </div>
+      <div class="social_widget">
+        <div class="social_widget_header">
+          <img
+            src="public/assets/icons/info-purple.svg"
+            alt="info"
+            class="social_widget_info"
+          />
+          <div>
+            <span class="social_tag">@iconik_event_atelier</span>
+            <span class="social_description">Description here</span>
+          </div>
+          <button class="social_widget_button"></button>
+        </div>
+        <div class="social_widget_body">
+          <div class="social_widget_img">
+            <img
+              src="public/assets/gallery/gallery-1.jpg"
+              alt="atelier"
+              class="social_widget_img"
+            />
+          </div>
+          <div class="social_widget_img">
+            <img
+              src="public/assets/gallery/gallery-2.jpg"
+              alt="atelier"
+              class="social_widget_img"
+            />
+          </div>
+          <div class="social_widget_img">
+            <img
+              src="public/assets/gallery/gallery-3.jpg"
+              alt="atelier"
+              class="social_widget_img"
+            />
+          </div>
+          <div class="social_widget_img">
+            <img
+              src="public/assets/gallery/gallery-4.jpg"
+              alt="atelier"
+              class="social_widget_img"
+            />
+          </div>
+          <div class="social_widget_img">
+            <img
+              src="public/assets/gallery/gallery-5.jpg"
+              alt="atelier"
+              class="social_widget_img"
+            />
+          </div>
+          <div class="social_widget_img">
+            <img
+              src="public/assets/gallery/gallery-6.jpg"
+              alt="atelier"
+              class="social_widget_img"
+            />
+          </div>
+        </div>
+        <div class="social_widget_footer">
+          <button class="social_widget_refresh"></button>
+          <span class="social_widget_refresh_text">Load more</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_body">
+        <div class="footer_body_info">
+          <img src="public/assets/icons/logo.svg" alt="" class="footer_logo" />
+          <div class="footer_content">
+            <div class="footer_nav">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Gallery</a>
+              <a href="#">Contacts</a>
+              <a href="#">Privacy policy</a>
+            </div>
+            <div class="footer_contact">
+              <div class="footer_contact_item">
+                <span class="footer_contact_item_title">PHONE</span>
+                <span class="footer_contact_item_text">+000 00 000 0000</span>
+              </div>
+              <div class="footer_contact_item">
+                <span class="footer_contact_item_title">EMAIL</span>
+                <span class="footer_contact_item_text"
+                  >mailexample@gmail.com</span
+                >
+              </div>
+              <button class="footer_contact_button">Contact Us</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer_map">
+          <img
+            src="public/assets/map.jpg"
+            alt=""
+            class="footer_map_background"
+          />
+          <button style="left: 50%; top: 50%" class="footer_map_info"></button>
+          <button style="left: 30%; top: 40%" class="footer_map_info"></button>
+          <button style="left: 70%; top: 20%" class="footer_map_info"></button>
+          <button style="left: 60%; top: 20%" class="footer_map_info"></button>
+          <!-- <button class="footer_map_minus"></button>
+          <button class="footer_map_plus"></button> -->
+          <a href="#" class="footer_map_full">OPEN IN GOOGLE MAPS</a>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <span class="copyright">© 2023 All rights reserved.</span>
+        <!-- <span class="policy">Privacy policy / Club rules</span> -->
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>

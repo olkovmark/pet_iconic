@@ -1,0 +1,131 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  &_conteiner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+  }
+
+  &_consultation {
+    display: none;
+  }
+}
+
+.header_logo {
+  width: 80%;
+  padding: 15px;
+
+  img {
+    width: 150px;
+  }
+}
+
+.nav_button_open {
+  display: flex;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2;
+
+  img {
+    width: 24px;
+    height: 11px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.navigation {
+  display: none;
+  position: fixed;
+
+  flex-direction: column;
+
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #2d2d2e;
+
+  a {
+    padding: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: white;
+  }
+  a:hover {
+    color: #8b32fe;
+  }
+  a.selected {
+    color: #8b32fe;
+  }
+  &_exit {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-image: url("../../public/assets/icons/cross.svg");
+    background-color: #00000000;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav_button_open {
+    display: none;
+  }
+
+  .navigation {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    align-items: center;
+    background-color: #00000000;
+
+    a {
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    &_exit {
+      display: none;
+    }
+  }
+
+  .header {
+    height: 100px;
+  }
+
+  .header_consultation {
+    display: inline-block;
+
+    background-color: #8b32fe;
+    margin: 22px 15px;
+    border: 0;
+    border-radius: 2px;
+    padding: 16px 26px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+  }
+}

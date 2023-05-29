@@ -1,0 +1,60 @@
+.plans {
+  padding: 20px 0;
+  background: #2d2d2e;
+}
+
+.plans_card {
+  background-color: #1b1b1b;
+  margin: 0 15px;
+  &_title {
+    padding: 30px 20px 0 20px;
+  }
+
+  img {
+    display: none;
+  }
+
+  .plans_card_list {
+    list-style-image: url("../../public/assets/icons/checkmark.svg");
+  }
+  &_item {
+    padding-left: 10px;
+    margin: 20px 20px;
+    color: white;
+  }
+
+  .plans_card_btnInfo {
+    width: 100%;
+    height: 55px;
+    border: 0;
+    background: #8b32fe;
+    color: white;
+    transition: opacity 0.2s;
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+.plans_card.super {
+  background-color: white;
+
+  .plans_card_title,
+  .plans_card_item {
+    color: #1b1b1b;
+  }
+}
+
+@media (min-width: 800px) {
+  .plans {
+    &_list {
+      display: flex;
+    }
+    &_card {
+      width: 100%;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

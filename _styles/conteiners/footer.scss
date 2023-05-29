@@ -1,0 +1,142 @@
+.footer {
+  background-color: #2d2d2e;
+
+  &_logo {
+    padding: 0 15px;
+
+    margin-top: 50px;
+    width: 150px;
+  }
+
+  &_content {
+    padding: 0 15px;
+    justify-content: space-between;
+    display: flex;
+    margin: 40px 0;
+  }
+
+  &_nav {
+    a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    a:not(:last-of-type) {
+      padding-bottom: 20px;
+    }
+    a:hover {
+      color: lightpink;
+    }
+  }
+
+  &_contact {
+    display: flex;
+    flex-direction: column;
+    &_item_title {
+      display: block;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba(193, 203, 224, 0.5);
+      padding-bottom: 10px;
+    }
+    &_item_text {
+      display: block;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 18px;
+      color: white;
+      padding-bottom: 10px;
+    }
+    &_button {
+      padding: 18px 36px;
+      background-color: #8b32fe;
+      border: 0;
+      border-radius: 2px;
+
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 18px;
+      color: white;
+
+      &:active {
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+.footer_map {
+  position: relative;
+  &_background {
+    width: 100%;
+  }
+  &_info {
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    background-color: #00000000;
+    border: 0;
+    background-size: cover;
+    background-image: url("../../public/assets/icons/Union.svg");
+  }
+  &_full {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+    height: 44px;
+
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 0 21px 0 13px;
+
+    bottom: 11px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      display: block;
+      background-image: url("../../public/assets/icons/arrow-angle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.footer_bottom {
+  text-align: center;
+  font-size: 11px;
+  line-height: 16px;
+  margin: 15px 0;
+  color: white;
+}
+
+@media (min-width: 800px) {
+  .footer_body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+    display: flex;
+    align-self: center;
+    > div {
+      width: 100%;
+    }
+  }
+}

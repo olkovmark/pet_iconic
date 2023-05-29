@@ -1,0 +1,70 @@
+.events {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  &_list {
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+    overflow: auto;
+  }
+
+  &_card {
+    position: relative;
+
+    img {
+      width: 265px;
+      z-index: -1;
+    }
+    &_text {
+      bottom: 15px;
+      position: absolute;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 0 20px;
+    }
+    &_button {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #00000000;
+      background-image: url("../../public/assets/icons/play-white.svg");
+
+      position: absolute;
+      z-index: 1;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+
+      width: 50px;
+      height: 50px;
+      border: 1.5px solid white;
+      border-radius: 50%;
+      color: white;
+    }
+  }
+
+  &_button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 34px;
+    padding: 18px 36px;
+    background-color: #8b32fe;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 800;
+    color: white;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .events_card {
+    img {
+      width: 800px;
+    }
+  }
+}

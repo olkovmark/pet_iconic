@@ -1,0 +1,25 @@
+.lifestyle {
+  overflow: hidden;
+
+  &_img {
+    width: 100%;
+
+    margin: 5px 0;
+    vertical-align: top;
+  }
+}
+.lifestyle_list {
+  columns: 2;
+  gap: 10px;
+}
+
+@media (min-width: 800px) {
+  .lifestyle_list {
+    columns: 4;
+    overflow: hidden;
+
+    img {
+      max-height: 700px;
+    }
+  }
+}

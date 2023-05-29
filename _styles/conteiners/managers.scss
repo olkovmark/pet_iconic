@@ -1,0 +1,31 @@
+.managers {
+  margin: 15px;
+  &_title {
+    margin: 0 20px;
+  }
+  &_list {
+    overflow: auto;
+    display: flex;
+    gap: 10px;
+  }
+
+  &_card {
+    &_name {
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    &_role {
+      color: rgba(193, 203, 224, 0.25);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .managers_list {
+    justify-content: center;
+  }
+}

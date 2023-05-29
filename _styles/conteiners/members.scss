@@ -1,0 +1,91 @@
+.member {
+  --number: 0;
+  overflow: hidden;
+  height: 325px;
+  padding: 0 20px;
+  &_list {
+    display: flex;
+    position: relative;
+    right: calc(100% * var(--number));
+    transition: all 1s;
+  }
+
+  button {
+    position: absolute;
+    margin-top: 16px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00000000;
+    border: 1.5px solid #ffffff;
+    border-radius: 50%;
+    :active {
+      opacity: 0.5;
+    }
+  }
+  &_right {
+    right: 20px;
+  }
+
+  &_dots {
+    position: relative;
+    padding-top: 38px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    .dot {
+      width: 4px;
+      height: 4px;
+      background-color: white;
+      border-radius: 50%;
+    }
+    .planc {
+      transition: left 1s;
+      position: absolute;
+      left: calc(50% - 37px + (14px * var(--number)));
+      width: 18px;
+      background-color: white;
+      height: 4px;
+    }
+  }
+}
+
+.member_card {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  align-items: center;
+  &_img {
+    width: 60px;
+  }
+  &_title {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+  &_text {
+    margin: 0 20px;
+    text-align: center;
+    color: #615d6d;
+  }
+}
+
+@media (min-width: 800px) {
+  .member {
+    &_list {
+      justify-content: center;
+    }
+    &_card {
+      width: 220px;
+      min-width: auto;
+    }
+
+    &_dots,
+    &_left,
+    &_right {
+      display: none;
+    }
+  }
+}

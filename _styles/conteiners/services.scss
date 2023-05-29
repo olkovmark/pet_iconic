@@ -1,0 +1,96 @@
+.services {
+  padding: 0 10px;
+
+  &_filter {
+    display: none;
+  }
+  &_select {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+    appearance: none;
+    background-image: url("../../public/assets/icons/caret-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 2.2rem top 50%;
+    background-size: 1rem auto;
+  }
+
+  &_list {
+    padding-top: 30px;
+    overflow: auto;
+    display: flex;
+    gap: 10px;
+
+    img {
+      width: 265px;
+    }
+    .service_card_description {
+      color: white;
+    }
+  }
+}
+
+.service_price {
+  display: flex;
+  justify-content: space-between;
+  &_discount {
+    color: white;
+    font-size: 14px;
+  }
+  &_full {
+    color: #615d6d;
+    font-size: 14px;
+    text-decoration: line-through;
+  }
+
+  &_time {
+    color: rgba($color: #ffffff, $alpha: 0.5);
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-image: url("../../public/assets/icons/clock.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .services_select {
+    display: none;
+  }
+
+  .services_filter {
+    display: flex;
+    justify-content: center;
+    button {
+      background-color: #00000000;
+      border: 1px solid #615d6d;
+      color: white;
+      padding: 19px 28px;
+
+      &.selected {
+        border-color: white;
+      }
+
+      &:hover {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  .services_list {
+    gap: 20px;
+  }
+  .service_card {
+    img {
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "pages/main";
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  background: #1b1b1b;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 800px) {
+  .body {
+    gap: 100px;
+  }
+}
